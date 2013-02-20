@@ -1,0 +1,86 @@
+# Discography YAML v.01
+
+# NOTES:
+#   - This is a proposed YAML implementation for importing/exporting discographies.
+#   - Background: http://drupal.org/node/1226226
+#   - How this information is parsed and displayed is dependent on the
+#     application that imports/exports it. 
+
+# STRUCTURE
+#    - Channel info: The first level items describe the discography itself, similar to
+#      RSS channel level info. Title, Publish date, URL, Image, Author, Description.
+#    - RELEASES is an array of items. Each item can either be a single track entity
+#      or an album entity containing an array of tracks. Your discography should
+#      be structured in such a way that you only have to define things once, and that
+#      nesting and track order are implied. We want to avoid overengineered semantics,
+#      data redundancy and circuitious node referencing when possible to keep
+#      things human readable.
+
+# TODOS:
+#   - Check YAML formatting / compliance. Minimize indenting?
+#   - Clarify what minimum fields are required to make this useful:
+#     i.e. Every release needs a Title & URI
+
+title: Portishead YAML file
+published: 2013-02-07
+url: http://www.pushtape-example.com
+image: http://www.pushtape-example.com/file/band-graphic.jpg
+author: Portishead
+description:
+    Portishead are an English band formed in 1991 in Bristol. The band is named
+    after the nearby town of the same name, 8 miles west of Bristol.
+releases:
+    - title        : New Single
+      uri          : http://www.pushtape-example.com/track/new-single
+      release-date : 2012-05-07
+      audio        : http://www.pushtape-example.com/file/new-single.mp3
+      artwork      : http://www.pushtape-example.com/file/new-single-artwork.jpg
+      notes        : Recorded in Bristol, England
+      lyrics       : | 
+                     Nulla venenatis lorem sit amet nulla scelerisque bibendum.
+                     Maecenas et enim neque!
+                     Maecenas et enim neque!
+      credits      : Written by Geoff Barrow
+      artist       : Portishead
+      license      : All rights reserved
+      tags         : [experimental, electronic]
+      links        :
+                    - url: http://www.example.com/purchase-link 
+                      title: Amazon
+                    - url: http://www.example.com/purchase-link  
+                      title: Bandcamp                  
+    - title        : Dummy      
+      uri          : http://www.pushtape-example.com/release/dummy
+      release-date : 1994-08-22
+      label        : Go! Beat
+      artwork      : http://www.pushtape-example.com/file/new-single-artwork.jpg
+      notes        : Recorded in Bristol, England
+      credits      : All songs written & produced by Geoff Barrow, Beth Gibbons, Adrium Utley
+      artist       : Portishead
+      license      : All rights reserved
+      links        :
+                    - title: Amazon
+                      url: http://www.example.com/purchase-link 
+                    - title: Bandcamp 
+                      url: http://www.example.com/purchase-link       
+      tracklist    :
+                    - title        : Mysterons
+                      uri          : http://www.pushtape-example.com/track/mysterons
+                      audio        : http://www.pushtape-example.com/file/mysterons.mp3
+                      lyrics       : | 
+                                     Nulla venenatis lorem sit amet nulla scelerisque bibendum.
+                                     Maecenas et enim neque!
+                                     Maecenas et enim neque!               
+                    - title        : Sour Times
+                      uri          : http://www.pushtape-example.com/track/sour-times
+                      release-date : 2012-05-07
+                      audio        : http://www.pushtape-example.com/file/sour-times.mp3
+                      artwork      : http://www.pushtape-example.com/file/sour-times-track-artwork.jpg
+                      notes        : "Sour Times" samples Lalo Schifrin's "The Danube Incident" (Schifrin) 
+                                     and Smokey Brooks' "Spin It Jig" (Henry Brooks, Otis Turner).
+                      lyrics       : | 
+                                     Nulla venenatis lorem sit amet nulla scelerisque bibendum.
+                                     Maecenas et enim neque!
+                                     Maecenas et enim neque!
+             
+
