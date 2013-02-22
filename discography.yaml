@@ -1,7 +1,7 @@
 # Discography YAML v.01
 
 # NOTES:
-#   - This is a proposed YAML implementation for importing/exporting discographies.
+#   - This is an example YAML implementation for importing/exporting discographies.
 #   - Background: http://drupal.org/node/1226226
 #   - How this information is parsed and displayed is dependent on the
 #     application that imports/exports it. 
