@@ -1,4 +1,4 @@
-Portable Discography YAML/JSON Schema
+Portable Music Discography Schema (YAML/JSON)
 ================
 
 There are many existing schemas for music metadata on the web [1]. However, existing music schemas tend to be either too specific to their implementation, too general for discography use, or too difficult to implement. 
