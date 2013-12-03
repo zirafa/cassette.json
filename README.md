@@ -37,5 +37,6 @@ Example use cases for a YAML/JSON format:
   - XSPF XML
   - Podcasts / RSS
   - Media RSS
+
 [2] Background: http://drupal.org/node/1226226
 
