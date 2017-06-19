@@ -21,12 +21,12 @@ Example use cases for a YAML/JSON format:
 # Structure
 - CHANNEL INFO: The first level items describe the discography itself, similar to RSS channel level info. Title, Publish date, URL, Image, Author, Description, lastBuild time.
 
-- RELEASES is an array of items. Each item can either be a single track entity or an album entity containing an array of tracks. Your discography should be structured in such a way that you only have to define things once, and that nesting and track order are implied. We want to avoid overengineered semantics, data redundancy and circuitious node referencing when possible to keep things human readable.
+- RELEASES is an array of items. Each item can either be a single track entity or an album entity containing an array of tracks. Your discography should be structured in such a way that you only have to define things once, and that nesting and track order are implied. We want to avoid overengineered semantics, data redundancy and circuitious node referencing when possible to keep things human readable. 
 
 # Todos
-  - Explore differences between discography.yaml and cassette.json
+  - Explore differences between discography.yaml and cassette.json. For instance, discography.yaml assumes information is embedded directly, while cassette.json assumes most information is delivered via a network resource -- primarily file URIs such as notes.md, artwork.jpg, and [tracklist.jspf](http://www.xspf.org/jspf/). 
   - Clarify what minimum fields are required to make this useful: i.e. Every release needs a Title & URI
-
+ 
 # References
 [1] Existing Music Schemas for the web
   - Musicbrainz XML
